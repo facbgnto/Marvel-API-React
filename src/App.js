@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import MyAPI from './Components/MyAPI';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    const [busqueda, setBusqueda] = useState("");
+    // funcion optener el valor input de busqueda
+    const buscar = (e) => { setBusqueda(e.target.value);}  ;
+ 
+   return (
+   <div className='page'>
+      
+          <nav className="navbar navbar-dark mb-4 p-3 bg-dark text-light">
+                    <img className='imgLogo' src='https://img2.freepng.es/20210508/le/transparent-marvel-icon-cinema-and-tv-icon-609758b9c9a900.382426681620531385826.jpg'></img>
+                    <span className="navbard-brand"> Marvel </span>
+                    <input onChange={buscar} type="text" placeholder="Buscar" />      
+          </nav>
 
+         <MyAPI buscar={busqueda}></MyAPI>
+   </div>
+   );
+}
 export default App;

@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.page{
+  justify-items: center;
+
+}
+.table{
+  width: 40%;
+  margin: auto;
+}
+
+.imgLogo{
+  height: 40px;
+  width: 40px;
+  padding: auto;
+  border-radius: 50%;
+  border: black 1px solid;
+}
+
+.cards {
+  padding: 0px 5%;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+ 
+  gap: 45px
+}
+
+.navbar{
+  width: 100%;
+}
