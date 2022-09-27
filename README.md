@@ -1,7 +1,7 @@
 
 Video 
 
-[![Alt text](![image](https://user-images.githubusercontent.com/37346252/192431623-9083f67a-52ba-416c-a1ca-518ea1ba9a39.png))](https://www.youtube.com/watch?v=woMS4Bg8gHg)
+[![Alt text](![image](![image](https://img.youtube.com/vi/woMS4Bg8gHg/0.jpg)))](https://www.youtube.com/watch?v=woMS4Bg8gHg)
 
 
 # Getting Started with Create React App
