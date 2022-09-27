@@ -1,8 +1,7 @@
 
 Video 
 
-[![Alt text](![image](![image](https://img.youtube.com/vi/woMS4Bg8gHg/0.jpg)))](https://www.youtube.com/watch?v=woMS4Bg8gHg)
-
+[![Alt text](https://img.youtube.com/vi/jlhGCemK2cE/0.jpg)](https://youtu.be/jlhGCemK2cE)
 
 # Getting Started with Create React App
 
