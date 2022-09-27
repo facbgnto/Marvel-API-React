@@ -1,3 +1,8 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 .App {
   text-align: center;
 }
@@ -64,4 +69,14 @@
 
 .navbar{
   width: 100%;
+}
+
+footer{
+  color: white;
+  left:0px;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background:#999;
 }

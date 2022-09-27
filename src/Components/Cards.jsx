@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Card from 'react-bootstrap/Card';
+
+
 const Cards = ({resultado}) => {
     console.log("asdas")
-console.log(resultado)
+    console.log(resultado)
     return (
       <div>
            <div className='cards'>      
