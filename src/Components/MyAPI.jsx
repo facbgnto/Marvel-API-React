@@ -14,8 +14,7 @@ const MyAPI = ({buscar}) => {
   
      //  Función que consulta la API
      const consultarInformacion = async () => {
-     const url = 'https://gateway.marvel.com:443/v1/public/characters?orderBy=modified&limit=99&apikey=e48ccae9e6de897734d0274d1fdb5e7f';
- //  const url = 'https://gateway.marvel.com:443/v1/public/characters?nameStartsWith='+{buscar}+'&orderBy=-name&apikey=e48ccae9e6de897734d0274d1fdb5e7f';
+     const url = 'https://gateway.marvel.com:443/v1/public/characters?limit=99&apikey=e48ccae9e6de897734d0274d1fdb5e7f';
      const response = await fetch(url)
      const data = await response.json()
      setInfo(data.data.results); // con setInfoactualizamos el estado
@@ -23,6 +22,7 @@ const MyAPI = ({buscar}) => {
 
     }
       // cierre consulta api
+
     let resultado = [];
 
     if(buscar === ""){    
@@ -31,11 +31,9 @@ const MyAPI = ({buscar}) => {
     }else{
         resultado = !busqueda ? info : info.filter((dato)=> dato.name.toLowerCase().includes(buscar.toLocaleLowerCase()))   
         resultado.sort((a, b) => { return a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1;  })
-        console.log(resultado) 
-      
+        console.log(resultado)  
     }
-      
-  
+        
      return (
      <div className='page'>
          <div className="container"> 

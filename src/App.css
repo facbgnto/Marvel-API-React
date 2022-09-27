@@ -60,10 +60,10 @@ html {
 }
 
 .cards {
-  padding: 0px 5%;
+  padding: 0px;
+  margin-bottom: 8%;
   display:grid;
   grid-template-columns: repeat(4, 1fr);
- 
   gap: 45px
 }
 
