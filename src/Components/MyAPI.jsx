@@ -25,13 +25,13 @@ const MyAPI = ({buscar}) => {
 
 
     let resultado = [];
-
+console.log(orden)
     if(buscar === ""){    
         resultado = info;
-        resultado.sort((a,b) =>(orden ===0)?(a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() > a.name.toLowerCase()) ? -1 : 0):(a.name.toLowerCase() < b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() < a.name.toLowerCase()) ? -1 : 0))
+        resultado.sort((a,b) =>(orden ==0)?(a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() > a.name.toLowerCase()) ? -1 : 0):(a.name.toLowerCase() < b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() < a.name.toLowerCase()) ? -1 : 0))
     }else{
         resultado = !busqueda ? info : info.filter((dato)=> dato.name.toLowerCase().includes(buscar.toLocaleLowerCase()))   
-        resultado.sort((a,b) =>(orden ===0)?(a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() > a.name.toLowerCase()) ? -1 : 0):(a.name.toLowerCase() < b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() < a.name.toLowerCase()) ? -1 : 0))
+        resultado.sort((a,b) =>(orden ==0)?(a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() > a.name.toLowerCase()) ? -1 : 0):(a.name.toLowerCase() < b.name.toLowerCase()) ? 1 : ((b.name.toLowerCase() < a.name.toLowerCase()) ? -1 : 0))
         console.log(resultado)  
     }
     

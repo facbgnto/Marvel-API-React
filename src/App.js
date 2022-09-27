@@ -11,7 +11,6 @@ function App() {
  
    return (
    <div className='page'>
-      
           <nav className="navbar navbar-dark mb-4 p-3 bg-dark text-light">
                     <img className='imgLogo' src='https://img2.freepng.es/20210508/le/transparent-marvel-icon-cinema-and-tv-icon-609758b9c9a900.382426681620531385826.jpg'></img>
                     {/* <span className="navbard-brand"> Marvel </span> */}
